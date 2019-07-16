@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memes and Mems</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="JS/JSmem.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mems.html">Mems</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="memes.html">Memes</a>
+              </li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="bodytext"> 
+        <form action="#" id="regular_meme">
+            <p><label for="tmeme">Text to go on top</label></p>
+            <p> <input type="text" id="tmeme" name=tmeme"></p>
+           <p><label for="bmeme">Text to go on bottom</label></p>
+            <p><input type="text" id="bmeme" name="bmeme"></p>
+            <p><label for="imeme">Image URL</label></p>
+            <p><input type="text" id="imeme" name="imeme"></p>
+            <p><input type="submit" value="submit" onclick="return createImg();"></p>
+            
+        </form>
+    </div>
+    <article id="gallery">
+
+    </article>
+</body>
+</html>

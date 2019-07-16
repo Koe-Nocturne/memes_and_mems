@@ -1,0 +1,94 @@
+
+.Delbuttedit {
+    width: 30%;
+    height: 55px;
+    color: gray;
+}
+
+input {
+    width: 30%;
+    height: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input:focus {
+    border: 3px solid darkblue;
+}
+.body form{
+    display: block;
+    margin: 25px;
+    padding: 8px;
+}
+
+.bodytext {
+    height: 25%;
+    text-align: center;
+    background-color: #F4F7F7;
+    
+}
+.bodytext, .toptext, .bottomtext {
+    text-align: center;
+}
+.image img {
+    height: 100%;
+}
+.toptext {
+    top: 0px;
+}
+.bottomtext{
+    bottom: 0px;
+}
+.image {
+    position: relative;
+    width: 450px;
+    height: 350px;
+}
+#gallery div{
+ float:left;
+ margin: 20px;
+}
+#gallery, .image img, .bottomtext, .toptext {
+    width: 100%;
+}
+.toptext , .bottomtext {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    font-family: "Impact";
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#bodycolor {
+    padding: 20px;
+    background: #F4F7F7;
+    height: 100vh;
+    width: 100%;
+}
+#header{
+    margin: auto;
+    height: 50px;
+    width: 700px;
+    justify-content: center;
+    align-content: flex-end;
+}
+#block {
+    margin: auto;
+    width: 700px;
+    height: 600px;
+    background: darkslategray;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px;
+    
+}
+.card {
+    justify-content: center;
+    background-color: blue;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+}
