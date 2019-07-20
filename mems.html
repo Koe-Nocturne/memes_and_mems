@@ -30,39 +30,114 @@
                 </div>
               </nav>
 
-              <div>
-                <h2>Coming Soon</h2>
-              </div>
-<!-- 
-    <article>
-        <div id="bodycolor">
+
+    <article id="bodycolor">
+        <header id="startloc">
+            <div>
+              <h1>Memory Game</h1>
+            </div>
+            <div>
+              <h5>Highscore: <span id="hsShowcase">--</span> clicks</h5>
+            </div>
+            <div id="buttondiv">
+              <button id="startbutton" onclick="startdegamep()">Start</button>
+            </div>
+            <div>
+              <h5 id="restart_startext">click button to start game</h5>
+            </div>
+        </header>
+
+        <div>
             <div id="header">
-                    <h2>0:00</h2>
-                    <button id="startbutton">Start</button>
-                    <h2>clicks: 00</h2>
+              <h5 id="timer">0:00</h5>
+              <span><span>Clicks: </span><span id= "counter">00</span></span>
+                    
+                    
             </div>
 
             <div id="block">
-                <div class="card">6</div>
-                <div class="card">3</div>
-                <div class="card">4</div>
-                <div class="card">5</div>
-                <div class="card">1</div>
-                <div class="card">2</div>
-                <div class="card">3</div>
-                <div class="card">5</div>
-                <div class="card">6</div>
-                <div  class="card">1</div>
-                <div  class="card">7</div>
-                <div  class="card">9</div>
-                <div  class="card">8</div>
-                <div  class="card">2</div>
-                <div  class="card">4</div>
-                <div  class="card">7</div>
-                <div  class="card">8</div>
-                <div  class="card">9</div>
+              <div class="card" data-cardtype="pink-plum">
+                <div class="front"><img  src="https://cdn.shopify.com/s/files/1/1213/8910/products/Bechtel_s_Crab_Apple_-_Malus_Ioensis_Plena_-_1921_-_Flower_Illustration_Poster_small_1024x1024.jpg?v=1544740712" alt=""></div>
+                <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+              </div>
+              <div class="card" data-cardtype="purple-yello">
+                <div class="front"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd5-ning-74_2.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1800&s=86d484ac81c6b55c53a95c2d6a33f981" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div class="card" data-cardtype="goth-flower">
+                <div class="front"><img src="https://i.pinimg.com/originals/66/8a/ae/668aae4f436c1c00bdd72bf33a8b8f3f.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                    </div>
+              <div class="card" data-cardtype="red-boq">
+                <div class="front"><img src="https://st2.depositphotos.com/3892937/7377/v/950/depositphotos_73776457-stock-illustration-bouquet-of-tropical-flowers.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div class="card" data-cardtype="white">
+                <div  class="front"><img src="https://olddesignshop.com/wp-content/uploads/2019/01/Ephemera-Gardening-Flower-Japanese-Anemone-OldDesignShop.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div class="card"  data-cardtype="red-en-white">
+                <div class="front"><img src="https://olddesignshop.com/wp-content/uploads/2019/01/Ephemera-Gardening-Flower-Sweet-William-OldDesignShop.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div class="card" data-cardtype="pink-plum">
+                <div  class="front"><img src="https://cdn.shopify.com/s/files/1/1213/8910/products/Bechtel_s_Crab_Apple_-_Malus_Ioensis_Plena_-_1921_-_Flower_Illustration_Poster_small_1024x1024.jpg?v=1544740712" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div class="card" data-cardtype="purp-flow">
+                <div class="front"><img src="https://media.istockphoto.com/illustrations/beautiful-botanic-illustration-flowers-isolated-on-white-background-illustration-id1035748326" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div class="card" data-cardtype="dull-red">
+                <div class="front"><img src="https://thegraphicsfairy.com/wp-content/uploads/2019/02/1905-Flowers-Penstemon-GraphicsFairy.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="exo-red">
+                <div class="front"><img src="https://c7.uihere.com/files/598/240/18/5ba8312b8320a.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="purp-flow">
+                <div  class="front"><img src="https://media.istockphoto.com/illustrations/beautiful-botanic-illustration-flowers-isolated-on-white-background-illustration-id1035748326" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="purple-yello">
+                <div  class="front"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd5-ning-74_2.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1800&s=86d484ac81c6b55c53a95c2d6a33f981" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="exo-red">
+                <div  class="front"><img src="https://c7.uihere.com/files/598/240/18/5ba8312b8320a.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="white">
+                <div class="front"><img src="https://olddesignshop.com/wp-content/uploads/2019/01/Ephemera-Gardening-Flower-Japanese-Anemone-OldDesignShop.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="red-boq">
+                <div  class="front"><img src="https://st2.depositphotos.com/3892937/7377/v/950/depositphotos_73776457-stock-illustration-bouquet-of-tropical-flowers.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="red-en-white">
+                <div  class="front"><img src="https://olddesignshop.com/wp-content/uploads/2019/01/Ephemera-Gardening-Flower-Sweet-William-OldDesignShop.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="yello">
+                <div class="front"><img src="https://www.collectorsprints.com/_images/botanical/wild/yellow-06-1.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="dull-red">
+                <div class="front"><img src="https://thegraphicsfairy.com/wp-content/uploads/2019/02/1905-Flowers-Penstemon-GraphicsFairy.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype="goth-flower">
+                <div  class="front"><img src="https://i.pinimg.com/originals/66/8a/ae/668aae4f436c1c00bdd72bf33a8b8f3f.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                  </div>
+              <div  class="card" data-cardtype = "yello">
+                <div class="front"><img src="https://www.collectorsprints.com/_images/botanical/wild/yellow-06-1.jpg" alt=""></div>
+                  <div class="back"><img src="https://i.pinimg.com/474x/c1/59/b4/c159b4738dae9c9d8d6417228024de8d--playing-card-design-card-card.jpg" alt=""></div>
+                    </div>
             </div>
         </div>
-    </article> -->
+    </article>
 </body>
 </html>
