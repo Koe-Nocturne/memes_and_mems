@@ -190,6 +190,5 @@ function winStatus() {
     } else {
         alert('Congrats you have completed the game!');
     }
-    timerSet = false; //makes it so we can intialize timer again
 }
 
